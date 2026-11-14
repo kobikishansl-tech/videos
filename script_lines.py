@@ -1,0 +1,16 @@
+LINES = [
+ ("s1",  "Day one. You wake up, and nothing feels different."),
+ ("s2",  "Then you notice. Every day, you wake up exactly one percent stronger."),
+ ("s3",  "Not just muscle. Speed. Memory. Nerve. Everything."),
+ ("s4",  "One percent doesn't feel like anything. That's the trap."),
+ ("s5",  "The average man can bench one hundred thirty five pounds."),
+ ("s6",  "Day thirty, you're at one eighty. Day one hundred, three sixty."),
+ ("s7",  "Day two hundred, you bend a steel rod, just to check if it's still steel."),
+ ("s8",  "And here's what nobody tells you. The math doesn't stop."),
+ ("s9",  "Day three sixty five, you're thirty eight times stronger than the day you started."),
+ ("s10", "You can outrun a car. You can hear a heartbeat across the room."),
+ ("s11", "And then, on day three sixty six, you find the note on your door."),
+ ("s12", "You're not the only one. Signed, day three thousand six hundred fifty."),
+ ("s13", "Ten years of one percent. What would that even look like?"),
+ ("s14", "Tell us in the comments. Part two is coming."),
+]
