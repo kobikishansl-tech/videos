@@ -12,7 +12,7 @@ window.RT = window.RT || {};
 RT.FPS = 30;
 RT.DURATION = RT.DURATION || 62.87;
 RT.CAMERAS = {
-  1:  { a: { pos: ["dance", [1.15, 1.35, 2.6]], look: ["dance", [0, 1.15, 0]], fov: 40 },
+  1:  { a: { pos: ["dance", [1.05, 1.4, 2.4]], look: ["dance", [0, 1.12, 0]], fov: 40 },
         b: { pos: ["dance", [0.85, 1.3, 2.3]], look: ["dance", [0, 1.17, 0]] } },
   2:  { a: { pos: ["dance", [0.75, 0.95, 2.6]], look: ["dance", [0, 0.9, 0]], fov: 40 },
         b: { pos: ["dance", [0.62, 0.9, 2.3]], look: ["dance", [0, 0.9, 0]] } },
@@ -66,8 +66,8 @@ RT.CAMERAS = {
         b: { pos: ["pews.1", [0.7, 1.35, 1.85]], look: ["pews.1", [0, 1.05, 0]] } },
   27: { a: { pos: ["pews.0", [-0.5, 1.75, 4.8]], look: ["pews.2", [0, 0.95, 0]], fov: 46 },
         b: { pos: ["pews.0", [-0.45, 1.7, 4.4]], look: ["pews.2", [0, 0.95, 0]] } },
-  28: { a: { pos: ["stage", [-0.75, 1.25, 3.1]], look: ["stage", [0.05, 0.72, 0]], fov: 38 },
-        b: { pos: ["stage", [-0.6, 1.2, 2.7]], look: ["stage", [0.05, 0.72, 0]] } },
+  28: { a: { pos: ["stage", [-0.8, 1.3, 3.5]], look: ["stage", [-0.4, 1.05, -0.5]], fov: 46 },
+        b: { pos: ["stage", [-0.62, 1.25, 2.8]], look: ["stage", [-0.4, 1.05, -0.5]] } },
 };
 // who the narrator is standing next to in each stretch: their mouths flap with the words (RT.SPOKEN times)
 RT.SPEAKERS = [
@@ -161,6 +161,17 @@ RT.story = function (stage, sets, wordsLayer) {
     dancer4: make("villager", "road", [spot("road", "stage"), [-1.1, 0, 0.9]], { variant: "a", name: "dancer4" }),
     crowd1:  make("villager", "road", [spot("road", "stage"), [2.1, 0, 2.6]], { variant: "b", name: "crowd1" }),
     crowd2:  make("villager", "road", [spot("road", "start"), [-1.2, 0, 2.2]], { variant: "c", name: "crowd2" }),
+    pool:    (() => {
+      for (const k of ["villagerA", "villagerB", "villagerC"]) if (RT.cast.defs && RT.cast.defs[k]) RT.cast.defs[k].px = 320;
+      const D = spot("road", "dance");
+      const ps = [[-0.4, -5.0], [0.5, -5.6], [-0.8, -6.2], [0.9, -6.8], [-0.3, -7.4], [0.4, -8.0],
+                  [-1.1, -5.8], [1.15, -7.0], [-0.6, -8.6]];
+      const out = [];
+      for (let i = 0; i < ps.length; i++)
+        out.push(make("villager", "road", [D[0] + ps[i][0], D[1], D[2] + ps[i][1]],
+          { variant: ["a", "b", "c"][i % 3], name: "pool" + i }));
+      return out;
+    })(),
     usher:   make("usher", "road", "gate", { name: "usher", rope: false, staff: false }),
     drummer: make("villager", "road", "stage", { variant: "b", name: "drummer", pose: { drum: true } }),
     judge:   make("judge", "hall", "seat", { name: "judge" }),
@@ -201,6 +212,10 @@ RT.story = function (stage, sets, wordsLayer) {
 
   const DANCE = RT.cast.dance;
   const dancePose = (t, ph, amp, fx) => Object.assign(DANCE(t, { bps: 1.5, ph, amp: amp == null ? 1 : amp }), fx || {});
+  const wobB = (t, ph) => 0.008 * Math.sin(t * 2.2 + ph);
+  const poolT = (t) => Math.floor(t * 8) / 8;   // the crowd redraws at 8 fps: it keeps the page light
+  const poolT4 = (t) => Math.floor(t * 4) / 4;  // the deep pool at 4 fps: half the repaints for the budget
+  const poolFx = (t, i, fx) => Object.assign({ bob: wobB(poolT(t), i) }, fx || {});
 
   // ---- the road view base: the dancer dancing, two onlookers; everything else hidden
   function roadBase(t) {
@@ -208,21 +223,24 @@ RT.story = function (stage, sets, wordsLayer) {
     show(cast.crowd1, null, { arms: "down", face: blinkF(X.puzzled, t, 4.4) });
     show(cast.crowd2, null, { arms: "down", face: blinkF(X.puzzled, t, 5.1) });
     for (const n of ["usher", "drummer", "judge", "doctor", "clap1", "clap2", "farmer", "priest", "pew1", "pew2", "dancer3", "dancer4", "collapsed"]) cast[n].group.visible = false;
+    for (const c of cast.pool) c.group.visible = false;
   }
 
   Object.assign(STAGING, {
     1(t) { roadBase(t);
-      show(cast.dancer, null, dancePose(t, 0, smooth(0.9, 1.6, t) * 0.7, { face: talkFace(blinkF(X.calm, t, 1.7), 0), sweat: 0 })); },
+      show(cast.dancer, null, dancePose(t, 0, 0.55 + 0.45 * smooth(0.0, 0.4, t), { face: talkFace(blinkF(X.calm, t, 1.7), 0), sweat: 0 })); },
     2(t) { roadBase(t); show(cast.dancer, null, dancePose(t, 0, 1, { face: X.alarm })); },
     3(t) { roadBase(t); show(cast.dancer, null, dancePose(t, 0, 1, { face: face(X.alarm, { sweat: 1 }) })); },
-    4(t) { roadBase(t); show(cast.dancer, null, dancePose(t, 0, 1, { face: X.scared }));
-      show(cast.dancer2, null, { arms: "down", face: X.calm }); show(cast.dancer3, null, { arms: "down", face: X.calm }); show(cast.dancer4, null, { arms: "down", face: X.calm }); },
+    4(t) { hideAll(); show(cast.dancer, null, dancePose(t, 0, smooth(3.9, 4.7, t), { face: X.scared })); },
     5(t) { roadBase(t);
       show(cast.crowd1, add3(spot("road", "dance"), [0.35, 0, 0.9]), { arms: "down", face: blinkF(X.puzzled, t, 5.6) });
       show(cast.crowd2, add3(spot("road", "dance"), [0.55, 0, 0.15]), { arms: "down", face: blinkF(X.puzzled, t, 6.4) }); },
     6(t) { roadBase(t);
       show(cast.dancer2, null, dancePose(t, 0.7, smooth(7.6, 8.6, t), { face: X.happy }));
-      show(cast.dancer3, null, { arms: "down", face: X.puzzled }); show(cast.dancer4, null, { arms: "down", face: X.puzzled }); },
+      show(cast.dancer3, null, { arms: "down", face: X.puzzled }); show(cast.dancer4, null, poolFx(t, 4, { arms: "down", face: X.puzzled }));
+      const tp4 = poolT4(t);
+      for (let i = 0; i < cast.pool.length; i++)
+        show(cast.pool[i], null, dancePose(tp4, i * 0.9, smooth(7.8, 9.4, tp4), { face: i % 2 ? X.happy : X.puzzled, bob: wobB(tp4, i) })); },
     7(t) { hideAll();
       show(cast.collapsed, add3(cast.collapsed._home, [0, 0, 0.35]), { sit: 1, seatH: 0, arms: "down", face: face(X.wince, { sweat: 1 }) });
       show(cast.farmer, null, { stalk: 0, tremble: 0, face: X.wince }); },
@@ -231,7 +249,8 @@ RT.story = function (stage, sets, wordsLayer) {
       show(cast.crowd1, add3(cast.crowd1._home, [0, 0, -0.6]), { arms: "down", face: X.scared });
       show(cast.crowd2, null, { arms: "down", face: X.scared }); },
     9(t) { roadBase(t); show(cast.dancer, null, dancePose(t, 0, 1, { face: X.scared }));
-      show(cast.dancer2, null, { arms: "down", face: X.scared }); show(cast.dancer3, null, { arms: "down", face: X.scared }); show(cast.dancer4, null, { arms: "down", face: X.scared }); },
+      show(cast.dancer2, null, poolFx(t, 1, { arms: "down", face: X.scared })); show(cast.dancer3, null, poolFx(t, 2, { arms: "down", face: X.scared })); show(cast.dancer4, null, poolFx(t, 3, { arms: "down", face: X.scared }));
+      for (let i = 0; i < cast.pool.length; i++) show(cast.pool[i], null, { arms: "down", face: X.scared, bob: wobB(poolT4(t), i) }); },
     10(t) { roadBase(t); show(cast.usher, null, { call: smooth(16.3, 16.9, t), face: X.stern }); },
     11(t) { roadBase(t);
       show(cast.dancer3, add3(spot("road", "corners.1"), [0, 0, 0.35]), { arms: "down", face: X.scared });
@@ -248,10 +267,12 @@ RT.story = function (stage, sets, wordsLayer) {
       show(cast.clap1, null, { arms: "clap", face: X.happy });
       show(cast.clap2, null, { arms: "cheer", face: X.laugh }); },
     15(t) { roadBase(t);
+      for (let i = 0; i < cast.pool.length; i++) show(cast.pool[i], null, { arms: "down", face: X.earnest, bob: wobB(poolT4(t), i) });
       show(cast.dancer2, add3(cast.dancer2._home, [-0.4, 0, -0.5 + smooth(26.9, 27.6, t) * 1.2]), { arms: "carry", face: X.earnest, bob: 0.012 * Math.abs(Math.sin(t * 4.2)) });
       show(cast.dancer3, add3(cast.dancer3._home, [0.6, 0, -0.2 + smooth(27.1, 27.8, t) * 1.0]), { arms: "down", face: X.earnest });
       show(cast.dancer4, add3(cast.dancer4._home, [-0.2, 0, -1.0 + smooth(27.0, 27.7, t) * 0.9]), { arms: "down", face: X.earnest }); },
-    16(t) { roadBase(t); show(cast.dancer2, null, { arms: "down", face: X.puzzled }); show(cast.dancer3, null, { arms: "down", face: X.puzzled }); },
+    16(t) { roadBase(t); show(cast.dancer2, null, poolFx(t, 1, { arms: "down", face: X.puzzled })); show(cast.dancer3, null, poolFx(t, 2, { arms: "down", face: X.puzzled }));
+      for (let i = 0; i < cast.pool.length; i++) show(cast.pool[i], null, { arms: "down", face: X.puzzled, bob: wobB(poolT4(t), i) }); },
     17(t) { roadBase(t);
       show(cast.drummer, null, { hit: 0.5 + 0.5 * Math.sign(Math.sin(t * Math.PI * 1.5)), face: talkFace(blinkF(X.earnest, t, 1.2), mouth("drummer", t)) });
       show(cast.dancer2, null, { arms: "clap", face: X.happy }); show(cast.dancer3, null, { arms: "cheer", face: X.laugh }); },
@@ -260,13 +281,19 @@ RT.story = function (stage, sets, wordsLayer) {
       show(cast.dancer3, null, dancePose(t, 1.9, smooth(31.9, 32.8, t), { face: X.happy }));
       show(cast.dancer4, null, dancePose(t, 3.1, smooth(32.3, 33.2, t), { face: X.laugh }));
       show(cast.drummer, add3(cast.drummer._home, [0, 0, -0.5]), { hit: 0.5 + 0.5 * Math.sign(Math.sin(t * Math.PI * 1.5)), face: X.earnest });
-      show(cast.crowd1, null, { arms: "cheer", face: X.laugh });
-      show(cast.crowd2, null, { arms: "clap", face: X.happy }); },
+      show(cast.crowd1, null, poolFx(t, 0, { arms: "cheer", face: X.laugh }));
+      show(cast.crowd2, null, poolFx(t, 2, { arms: "clap", face: X.happy }));
+      const tp = poolT4(t);
+      for (let i = 0; i < cast.pool.length; i++)
+        show(cast.pool[i], null, dancePose(tp, i * 0.9, smooth(31.8, 33.2, tp), { face: i % 3 ? X.happy : X.laugh, bob: wobB(tp, i) })); },
     19(t) { roadBase(t);
       show(cast.dancer2, null, dancePose(t, 0.7, 1, { face: face(X.scared, { sweat: 1 }) }));
       show(cast.dancer3, null, dancePose(t, 1.9, 1, { face: face(X.scared, { sweat: 1, wink: 1 }) }));
       show(cast.dancer4, null, dancePose(t, 3.1, 1, { face: face(X.wince, { sweat: 1 }) }));
-      show(cast.drummer, add3(cast.drummer._home, [0, 0, -0.5]), { hit: 0.5 + 0.5 * Math.sign(Math.sin(t * Math.PI * 1.7)), face: X.stern }); },
+      show(cast.drummer, add3(cast.drummer._home, [0, 0, -0.5]), { hit: 0.5 + 0.5 * Math.sign(Math.sin(t * Math.PI * 1.7)), face: X.stern });
+      const tp = poolT4(t);
+      for (let i = 0; i < cast.pool.length; i++)
+        show(cast.pool[i], null, dancePose(tp, i * 0.9, 1, { face: X.scared, sweat: i % 3 === 0 ? 1 : 0, bob: wobB(tp, i) })); },
     20(t) { hideAll(); },
     21(t) { hideAll();
       show(cast.crowd1, add3(spot("road", "well"), [-0.42, 0, 1.3]), { arms: "carry", face: X.earnest });
