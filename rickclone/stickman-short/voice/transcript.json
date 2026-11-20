@@ -1,0 +1,1370 @@
+[
+  {
+    "text": "She",
+    "start": 0.07,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "walked",
+    "start": 0.15,
+    "end": 0.48,
+    "id": "w1"
+  },
+  {
+    "text": "into",
+    "start": 0.48,
+    "end": 0.69,
+    "id": "w2"
+  },
+  {
+    "text": "a",
+    "start": 0.69,
+    "end": 0.74,
+    "id": "w3"
+  },
+  {
+    "text": "street",
+    "start": 0.74,
+    "end": 1.01,
+    "id": "w4"
+  },
+  {
+    "text": "one",
+    "start": 1.07,
+    "end": 1.22,
+    "id": "w5"
+  },
+  {
+    "text": "summer",
+    "start": 1.22,
+    "end": 1.54,
+    "id": "w6"
+  },
+  {
+    "text": "morning",
+    "start": 1.54,
+    "end": 1.96,
+    "id": "w7"
+  },
+  {
+    "text": "and",
+    "start": 1.96,
+    "end": 2.11,
+    "id": "w8"
+  },
+  {
+    "text": "began",
+    "start": 2.11,
+    "end": 2.37,
+    "id": "w9"
+  },
+  {
+    "text": "to",
+    "start": 2.4,
+    "end": 2.5,
+    "id": "w10"
+  },
+  {
+    "text": "dance",
+    "start": 2.5,
+    "end": 2.84,
+    "id": "w11"
+  },
+  {
+    "text": "and",
+    "start": 2.84,
+    "end": 2.98,
+    "id": "w12"
+  },
+  {
+    "text": "did",
+    "start": 2.98,
+    "end": 3.12,
+    "id": "w13"
+  },
+  {
+    "text": "not",
+    "start": 3.12,
+    "end": 3.27,
+    "id": "w14"
+  },
+  {
+    "text": "stop",
+    "start": 3.31,
+    "end": 3.62,
+    "id": "w15"
+  },
+  {
+    "text": "for",
+    "start": 3.77,
+    "end": 3.94,
+    "id": "w16"
+  },
+  {
+    "text": "six",
+    "start": 3.95,
+    "end": 4.24,
+    "id": "w17"
+  },
+  {
+    "text": "days.",
+    "start": 4.3,
+    "end": 5.24,
+    "id": "w18"
+  },
+  {
+    "text": "You",
+    "start": 5.31,
+    "end": 5.38,
+    "id": "w19"
+  },
+  {
+    "text": "see,",
+    "start": 5.39,
+    "end": 5.55,
+    "id": "w20"
+  },
+  {
+    "text": "she",
+    "start": 5.65,
+    "end": 5.79,
+    "id": "w21"
+  },
+  {
+    "text": "wasn't",
+    "start": 5.79,
+    "end": 6.02,
+    "id": "w22"
+  },
+  {
+    "text": "celebrating",
+    "start": 6.11,
+    "end": 6.65,
+    "id": "w23"
+  },
+  {
+    "text": "anything,",
+    "start": 6.65,
+    "end": 7.16,
+    "id": "w24"
+  },
+  {
+    "text": "and",
+    "start": 7.16,
+    "end": 7.3,
+    "id": "w25"
+  },
+  {
+    "text": "within",
+    "start": 7.3,
+    "end": 7.61,
+    "id": "w26"
+  },
+  {
+    "text": "weeks",
+    "start": 7.61,
+    "end": 7.86,
+    "id": "w27"
+  },
+  {
+    "text": "a",
+    "start": 7.86,
+    "end": 7.91,
+    "id": "w28"
+  },
+  {
+    "text": "hundred",
+    "start": 7.91,
+    "end": 8.26,
+    "id": "w29"
+  },
+  {
+    "text": "people",
+    "start": 8.26,
+    "end": 8.51,
+    "id": "w30"
+  },
+  {
+    "text": "were",
+    "start": 8.57,
+    "end": 8.76,
+    "id": "w31"
+  },
+  {
+    "text": "dancing",
+    "start": 8.76,
+    "end": 9.2,
+    "id": "w32"
+  },
+  {
+    "text": "beside",
+    "start": 9.26,
+    "end": 9.67,
+    "id": "w33"
+  },
+  {
+    "text": "her,",
+    "start": 9.67,
+    "end": 9.98,
+    "id": "w34"
+  },
+  {
+    "text": "then",
+    "start": 10.07,
+    "end": 10.38,
+    "id": "w35"
+  },
+  {
+    "text": "four",
+    "start": 10.38,
+    "end": 10.7,
+    "id": "w36"
+  },
+  {
+    "text": "hundred.",
+    "start": 10.7,
+    "end": 11.52,
+    "id": "w37"
+  },
+  {
+    "text": "Some",
+    "start": 11.59,
+    "end": 11.77,
+    "id": "w38"
+  },
+  {
+    "text": "of",
+    "start": 11.77,
+    "end": 11.83,
+    "id": "w39"
+  },
+  {
+    "text": "them",
+    "start": 11.93,
+    "end": 12.14,
+    "id": "w40"
+  },
+  {
+    "text": "danced",
+    "start": 12.14,
+    "end": 12.52,
+    "id": "w41"
+  },
+  {
+    "text": "until",
+    "start": 12.52,
+    "end": 12.83,
+    "id": "w42"
+  },
+  {
+    "text": "they",
+    "start": 12.83,
+    "end": 13.08,
+    "id": "w43"
+  },
+  {
+    "text": "dropped,",
+    "start": 13.08,
+    "end": 13.64,
+    "id": "w44"
+  },
+  {
+    "text": "begging",
+    "start": 13.64,
+    "end": 14.08,
+    "id": "w45"
+  },
+  {
+    "text": "anyone",
+    "start": 14.08,
+    "end": 14.46,
+    "id": "w46"
+  },
+  {
+    "text": "to",
+    "start": 14.46,
+    "end": 14.58,
+    "id": "w47"
+  },
+  {
+    "text": "make",
+    "start": 14.58,
+    "end": 14.79,
+    "id": "w48"
+  },
+  {
+    "text": "it",
+    "start": 14.85,
+    "end": 14.93,
+    "id": "w49"
+  },
+  {
+    "text": "stop.",
+    "start": 14.98,
+    "end": 15.48,
+    "id": "w50"
+  },
+  {
+    "text": "Nobody",
+    "start": 15.54,
+    "end": 15.89,
+    "id": "w51"
+  },
+  {
+    "text": "could.",
+    "start": 15.9,
+    "end": 16.48,
+    "id": "w52"
+  },
+  {
+    "text": "So",
+    "start": 16.54,
+    "end": 16.56,
+    "id": "w53"
+  },
+  {
+    "text": "the",
+    "start": 16.59,
+    "end": 16.75,
+    "id": "w54"
+  },
+  {
+    "text": "city",
+    "start": 16.75,
+    "end": 16.97,
+    "id": "w55"
+  },
+  {
+    "text": "first",
+    "start": 16.97,
+    "end": 17.24,
+    "id": "w56"
+  },
+  {
+    "text": "tried",
+    "start": 17.24,
+    "end": 17.49,
+    "id": "w57"
+  },
+  {
+    "text": "to",
+    "start": 17.55,
+    "end": 17.62,
+    "id": "w58"
+  },
+  {
+    "text": "shut",
+    "start": 17.62,
+    "end": 17.84,
+    "id": "w59"
+  },
+  {
+    "text": "it",
+    "start": 17.85,
+    "end": 17.95,
+    "id": "w60"
+  },
+  {
+    "text": "down.",
+    "start": 17.95,
+    "end": 18.36,
+    "id": "w61"
+  },
+  {
+    "text": "No",
+    "start": 18.43,
+    "end": 18.49,
+    "id": "w62"
+  },
+  {
+    "text": "dancing",
+    "start": 18.49,
+    "end": 18.99,
+    "id": "w63"
+  },
+  {
+    "text": "and",
+    "start": 18.99,
+    "end": 19.14,
+    "id": "w64"
+  },
+  {
+    "text": "the",
+    "start": 19.23,
+    "end": 19.37,
+    "id": "w65"
+  },
+  {
+    "text": "worst",
+    "start": 19.43,
+    "end": 19.76,
+    "id": "w66"
+  },
+  {
+    "text": "dancers",
+    "start": 19.76,
+    "end": 20.25,
+    "id": "w67"
+  },
+  {
+    "text": "locked",
+    "start": 20.25,
+    "end": 20.67,
+    "id": "w68"
+  },
+  {
+    "text": "away.",
+    "start": 20.67,
+    "end": 21.18,
+    "id": "w69"
+  },
+  {
+    "text": "That",
+    "start": 21.25,
+    "end": 21.38,
+    "id": "w70"
+  },
+  {
+    "text": "failed,",
+    "start": 21.38,
+    "end": 21.78,
+    "id": "w71"
+  },
+  {
+    "text": "so",
+    "start": 21.78,
+    "end": 21.88,
+    "id": "w72"
+  },
+  {
+    "text": "the",
+    "start": 21.88,
+    "end": 21.96,
+    "id": "w73"
+  },
+  {
+    "text": "doctors",
+    "start": 22.05,
+    "end": 22.38,
+    "id": "w74"
+  },
+  {
+    "text": "examined",
+    "start": 22.38,
+    "end": 22.78,
+    "id": "w75"
+  },
+  {
+    "text": "them,",
+    "start": 22.78,
+    "end": 23.08,
+    "id": "w76"
+  },
+  {
+    "text": "stroked",
+    "start": 23.08,
+    "end": 23.43,
+    "id": "w77"
+  },
+  {
+    "text": "their",
+    "start": 23.43,
+    "end": 23.68,
+    "id": "w78"
+  },
+  {
+    "text": "beards,",
+    "start": 23.68,
+    "end": 24.08,
+    "id": "w79"
+  },
+  {
+    "text": "and",
+    "start": 24.08,
+    "end": 24.23,
+    "id": "w80"
+  },
+  {
+    "text": "named",
+    "start": 24.23,
+    "end": 24.45,
+    "id": "w81"
+  },
+  {
+    "text": "the",
+    "start": 24.51,
+    "end": 24.59,
+    "id": "w82"
+  },
+  {
+    "text": "cause.",
+    "start": 24.65,
+    "end": 25.48,
+    "id": "w83"
+  },
+  {
+    "text": "Hot",
+    "start": 25.55,
+    "end": 25.75,
+    "id": "w84"
+  },
+  {
+    "text": "blood.",
+    "start": 25.75,
+    "end": 26.48,
+    "id": "w85"
+  },
+  {
+    "text": "The",
+    "start": 26.55,
+    "end": 26.67,
+    "id": "w86"
+  },
+  {
+    "text": "cure,",
+    "start": 26.67,
+    "end": 27.04,
+    "id": "w87"
+  },
+  {
+    "text": "everyone",
+    "start": 27.04,
+    "end": 27.49,
+    "id": "w88"
+  },
+  {
+    "text": "agreed,",
+    "start": 27.55,
+    "end": 28.05,
+    "id": "w89"
+  },
+  {
+    "text": "was",
+    "start": 28.05,
+    "end": 28.24,
+    "id": "w90"
+  },
+  {
+    "text": "more",
+    "start": 28.24,
+    "end": 28.49,
+    "id": "w91"
+  },
+  {
+    "text": "dancing.",
+    "start": 28.49,
+    "end": 29.2,
+    "id": "w92"
+  },
+  {
+    "text": "The",
+    "start": 29.27,
+    "end": 29.44,
+    "id": "w93"
+  },
+  {
+    "text": "guild",
+    "start": 29.44,
+    "end": 29.85,
+    "id": "w94"
+  },
+  {
+    "text": "hall",
+    "start": 29.85,
+    "end": 30.18,
+    "id": "w95"
+  },
+  {
+    "text": "opened",
+    "start": 30.18,
+    "end": 30.67,
+    "id": "w96"
+  },
+  {
+    "text": "its",
+    "start": 30.67,
+    "end": 30.91,
+    "id": "w97"
+  },
+  {
+    "text": "doors.",
+    "start": 30.91,
+    "end": 31.58,
+    "id": "w98"
+  },
+  {
+    "text": "Stages",
+    "start": 31.66,
+    "end": 31.9,
+    "id": "w99"
+  },
+  {
+    "text": "went",
+    "start": 31.9,
+    "end": 32.1,
+    "id": "w100"
+  },
+  {
+    "text": "up",
+    "start": 32.1,
+    "end": 32.2,
+    "id": "w101"
+  },
+  {
+    "text": "in",
+    "start": 32.2,
+    "end": 32.3,
+    "id": "w102"
+  },
+  {
+    "text": "the",
+    "start": 32.3,
+    "end": 32.38,
+    "id": "w103"
+  },
+  {
+    "text": "market",
+    "start": 32.47,
+    "end": 32.76,
+    "id": "w104"
+  },
+  {
+    "text": "square",
+    "start": 32.76,
+    "end": 33.07,
+    "id": "w105"
+  },
+  {
+    "text": "and",
+    "start": 33.07,
+    "end": 33.22,
+    "id": "w106"
+  },
+  {
+    "text": "musicians",
+    "start": 33.22,
+    "end": 33.69,
+    "id": "w107"
+  },
+  {
+    "text": "were",
+    "start": 33.69,
+    "end": 33.89,
+    "id": "w108"
+  },
+  {
+    "text": "paid",
+    "start": 33.89,
+    "end": 34.09,
+    "id": "w109"
+  },
+  {
+    "text": "to",
+    "start": 34.09,
+    "end": 34.19,
+    "id": "w110"
+  },
+  {
+    "text": "play.",
+    "start": 34.19,
+    "end": 34.64,
+    "id": "w111"
+  },
+  {
+    "text": "The",
+    "start": 34.71,
+    "end": 34.82,
+    "id": "w112"
+  },
+  {
+    "text": "goal",
+    "start": 34.82,
+    "end": 35.05,
+    "id": "w113"
+  },
+  {
+    "text": "was",
+    "start": 35.06,
+    "end": 35.24,
+    "id": "w114"
+  },
+  {
+    "text": "to",
+    "start": 35.24,
+    "end": 35.36,
+    "id": "w115"
+  },
+  {
+    "text": "dance",
+    "start": 35.36,
+    "end": 35.65,
+    "id": "w116"
+  },
+  {
+    "text": "the",
+    "start": 35.71,
+    "end": 35.84,
+    "id": "w117"
+  },
+  {
+    "text": "sickness",
+    "start": 35.84,
+    "end": 36.32,
+    "id": "w118"
+  },
+  {
+    "text": "clean",
+    "start": 36.32,
+    "end": 36.62,
+    "id": "w119"
+  },
+  {
+    "text": "out",
+    "start": 36.62,
+    "end": 36.79,
+    "id": "w120"
+  },
+  {
+    "text": "of",
+    "start": 36.81,
+    "end": 36.92,
+    "id": "w121"
+  },
+  {
+    "text": "them",
+    "start": 36.92,
+    "end": 37.15,
+    "id": "w122"
+  },
+  {
+    "text": "and",
+    "start": 37.17,
+    "end": 37.34,
+    "id": "w123"
+  },
+  {
+    "text": "whole",
+    "start": 37.34,
+    "end": 37.64,
+    "id": "w124"
+  },
+  {
+    "text": "crowds",
+    "start": 37.64,
+    "end": 38,
+    "id": "w125"
+  },
+  {
+    "text": "came",
+    "start": 38,
+    "end": 38.24,
+    "id": "w126"
+  },
+  {
+    "text": "to",
+    "start": 38.24,
+    "end": 38.26,
+    "id": "w127"
+  },
+  {
+    "text": "help,",
+    "start": 38.37,
+    "end": 38.72,
+    "id": "w128"
+  },
+  {
+    "text": "which",
+    "start": 38.72,
+    "end": 38.98,
+    "id": "w129"
+  },
+  {
+    "text": "is",
+    "start": 39.15,
+    "end": 39.21,
+    "id": "w130"
+  },
+  {
+    "text": "also",
+    "start": 39.21,
+    "end": 39.49,
+    "id": "w131"
+  },
+  {
+    "text": "how",
+    "start": 39.5,
+    "end": 39.73,
+    "id": "w132"
+  },
+  {
+    "text": "the",
+    "start": 39.73,
+    "end": 39.87,
+    "id": "w133"
+  },
+  {
+    "text": "city",
+    "start": 39.95,
+    "end": 40.24,
+    "id": "w134"
+  },
+  {
+    "text": "doubled",
+    "start": 40.24,
+    "end": 40.75,
+    "id": "w135"
+  },
+  {
+    "text": "its",
+    "start": 40.75,
+    "end": 40.97,
+    "id": "w136"
+  },
+  {
+    "text": "problem.",
+    "start": 40.97,
+    "end": 41.72,
+    "id": "w137"
+  },
+  {
+    "text": "By",
+    "start": 41.79,
+    "end": 41.85,
+    "id": "w138"
+  },
+  {
+    "text": "September,",
+    "start": 41.85,
+    "end": 42.66,
+    "id": "w139"
+  },
+  {
+    "text": "it",
+    "start": 42.66,
+    "end": 42.79,
+    "id": "w140"
+  },
+  {
+    "text": "ended",
+    "start": 42.8,
+    "end": 43.16,
+    "id": "w141"
+  },
+  {
+    "text": "the",
+    "start": 43.16,
+    "end": 43.38,
+    "id": "w142"
+  },
+  {
+    "text": "only",
+    "start": 43.38,
+    "end": 43.67,
+    "id": "w143"
+  },
+  {
+    "text": "way",
+    "start": 43.67,
+    "end": 43.86,
+    "id": "w144"
+  },
+  {
+    "text": "plagues",
+    "start": 43.89,
+    "end": 44.39,
+    "id": "w145"
+  },
+  {
+    "text": "end.",
+    "start": 44.39,
+    "end": 44.9,
+    "id": "w146"
+  },
+  {
+    "text": "It",
+    "start": 44.96,
+    "end": 45.02,
+    "id": "w147"
+  },
+  {
+    "text": "simply",
+    "start": 45.02,
+    "end": 45.4,
+    "id": "w148"
+  },
+  {
+    "text": "faded",
+    "start": 45.4,
+    "end": 45.68,
+    "id": "w149"
+  },
+  {
+    "text": "and",
+    "start": 45.77,
+    "end": 45.91,
+    "id": "w150"
+  },
+  {
+    "text": "the",
+    "start": 45.91,
+    "end": 46.1,
+    "id": "w151"
+  },
+  {
+    "text": "stages",
+    "start": 46.1,
+    "end": 46.48,
+    "id": "w152"
+  },
+  {
+    "text": "came",
+    "start": 46.48,
+    "end": 46.73,
+    "id": "w153"
+  },
+  {
+    "text": "down",
+    "start": 46.73,
+    "end": 46.98,
+    "id": "w154"
+  },
+  {
+    "text": "for",
+    "start": 46.98,
+    "end": 47.17,
+    "id": "w155"
+  },
+  {
+    "text": "firewood,",
+    "start": 47.17,
+    "end": 47.79,
+    "id": "w156"
+  },
+  {
+    "text": "and",
+    "start": 47.79,
+    "end": 47.98,
+    "id": "w157"
+  },
+  {
+    "text": "here",
+    "start": 47.98,
+    "end": 48.17,
+    "id": "w158"
+  },
+  {
+    "text": "is",
+    "start": 48.23,
+    "end": 48.31,
+    "id": "w159"
+  },
+  {
+    "text": "the",
+    "start": 48.37,
+    "end": 48.52,
+    "id": "w160"
+  },
+  {
+    "text": "part",
+    "start": 48.67,
+    "end": 48.79,
+    "id": "w161"
+  },
+  {
+    "text": "everyone",
+    "start": 48.79,
+    "end": 49.24,
+    "id": "w162"
+  },
+  {
+    "text": "missed.",
+    "start": 49.31,
+    "end": 49.96,
+    "id": "w163"
+  },
+  {
+    "text": "You",
+    "start": 50.03,
+    "end": 50.11,
+    "id": "w164"
+  },
+  {
+    "text": "see,",
+    "start": 50.11,
+    "end": 50.39,
+    "id": "w165"
+  },
+  {
+    "text": "the",
+    "start": 50.39,
+    "end": 50.52,
+    "id": "w166"
+  },
+  {
+    "text": "harvest",
+    "start": 50.55,
+    "end": 50.93,
+    "id": "w167"
+  },
+  {
+    "text": "before",
+    "start": 50.93,
+    "end": 51.26,
+    "id": "w168"
+  },
+  {
+    "text": "this",
+    "start": 51.26,
+    "end": 51.48,
+    "id": "w169"
+  },
+  {
+    "text": "had",
+    "start": 51.48,
+    "end": 51.64,
+    "id": "w170"
+  },
+  {
+    "text": "failed,",
+    "start": 51.64,
+    "end": 52.08,
+    "id": "w171"
+  },
+  {
+    "text": "and",
+    "start": 52.08,
+    "end": 52.24,
+    "id": "w172"
+  },
+  {
+    "text": "the",
+    "start": 52.24,
+    "end": 52.4,
+    "id": "w173"
+  },
+  {
+    "text": "winter",
+    "start": 52.4,
+    "end": 52.72,
+    "id": "w174"
+  },
+  {
+    "text": "that",
+    "start": 52.76,
+    "end": 52.95,
+    "id": "w175"
+  },
+  {
+    "text": "followed",
+    "start": 52.95,
+    "end": 53.37,
+    "id": "w176"
+  },
+  {
+    "text": "was",
+    "start": 53.43,
+    "end": 53.55,
+    "id": "w177"
+  },
+  {
+    "text": "one",
+    "start": 53.55,
+    "end": 53.58,
+    "id": "w178"
+  },
+  {
+    "text": "of",
+    "start": 53.73,
+    "end": 53.82,
+    "id": "w179"
+  },
+  {
+    "text": "the",
+    "start": 53.82,
+    "end": 54.04,
+    "id": "w180"
+  },
+  {
+    "text": "cruelest",
+    "start": 54.1,
+    "end": 54.52,
+    "id": "w181"
+  },
+  {
+    "text": "anyone",
+    "start": 54.52,
+    "end": 54.82,
+    "id": "w182"
+  },
+  {
+    "text": "remembered,",
+    "start": 54.91,
+    "end": 55.6,
+    "id": "w183"
+  },
+  {
+    "text": "so",
+    "start": 55.6,
+    "end": 55.72,
+    "id": "w184"
+  },
+  {
+    "text": "the",
+    "start": 55.72,
+    "end": 55.9,
+    "id": "w185"
+  },
+  {
+    "text": "whole",
+    "start": 55.9,
+    "end": 56.18,
+    "id": "w186"
+  },
+  {
+    "text": "city",
+    "start": 56.2,
+    "end": 56.42,
+    "id": "w187"
+  },
+  {
+    "text": "was",
+    "start": 56.47,
+    "end": 56.62,
+    "id": "w188"
+  },
+  {
+    "text": "starving,",
+    "start": 56.62,
+    "end": 57.22,
+    "id": "w189"
+  },
+  {
+    "text": "frightened,",
+    "start": 57.22,
+    "end": 57.94,
+    "id": "w190"
+  },
+  {
+    "text": "and",
+    "start": 57.94,
+    "end": 58.12,
+    "id": "w191"
+  },
+  {
+    "text": "one",
+    "start": 58.12,
+    "end": 58.3,
+    "id": "w192"
+  },
+  {
+    "text": "bad",
+    "start": 58.3,
+    "end": 58.39,
+    "id": "w193"
+  },
+  {
+    "text": "week",
+    "start": 58.48,
+    "end": 58.61,
+    "id": "w194"
+  },
+  {
+    "text": "from",
+    "start": 58.8,
+    "end": 59.05,
+    "id": "w195"
+  },
+  {
+    "text": "the",
+    "start": 59.15,
+    "end": 59.37,
+    "id": "w196"
+  },
+  {
+    "text": "edge.",
+    "start": 59.37,
+    "end": 60.04,
+    "id": "w197"
+  },
+  {
+    "text": "Nobody",
+    "start": 60.1,
+    "end": 60.35,
+    "id": "w198"
+  },
+  {
+    "text": "danced",
+    "start": 60.45,
+    "end": 60.74,
+    "id": "w199"
+  },
+  {
+    "text": "because",
+    "start": 60.74,
+    "end": 61.15,
+    "id": "w200"
+  },
+  {
+    "text": "they",
+    "start": 61.15,
+    "end": 61.39,
+    "id": "w201"
+  },
+  {
+    "text": "were",
+    "start": 61.39,
+    "end": 61.63,
+    "id": "w202"
+  },
+  {
+    "text": "happy.",
+    "start": 61.63,
+    "end": 62.14,
+    "id": "w203"
+  },
+  {
+    "text": "Their",
+    "start": 62.21,
+    "end": 62.4,
+    "id": "w204"
+  },
+  {
+    "text": "bodies",
+    "start": 62.4,
+    "end": 62.7,
+    "id": "w205"
+  },
+  {
+    "text": "carried",
+    "start": 62.73,
+    "end": 63.09,
+    "id": "w206"
+  },
+  {
+    "text": "them",
+    "start": 63.09,
+    "end": 63.3,
+    "id": "w207"
+  },
+  {
+    "text": "along",
+    "start": 63.3,
+    "end": 63.56,
+    "id": "w208"
+  },
+  {
+    "text": "and",
+    "start": 63.56,
+    "end": 63.72,
+    "id": "w209"
+  },
+  {
+    "text": "fear",
+    "start": 63.72,
+    "end": 63.93,
+    "id": "w210"
+  },
+  {
+    "text": "and",
+    "start": 63.93,
+    "end": 64.09,
+    "id": "w211"
+  },
+  {
+    "text": "hunger",
+    "start": 64.09,
+    "end": 64.41,
+    "id": "w212"
+  },
+  {
+    "text": "picked",
+    "start": 64.41,
+    "end": 64.73,
+    "id": "w213"
+  },
+  {
+    "text": "up",
+    "start": 64.73,
+    "end": 64.83,
+    "id": "w214"
+  },
+  {
+    "text": "the",
+    "start": 64.83,
+    "end": 64.98,
+    "id": "w215"
+  },
+  {
+    "text": "bill.",
+    "start": 65,
+    "end": 65.4,
+    "id": "w216"
+  },
+  {
+    "text": "The",
+    "start": 65.47,
+    "end": 65.61,
+    "id": "w217"
+  },
+  {
+    "text": "music",
+    "start": 65.61,
+    "end": 65.95,
+    "id": "w218"
+  },
+  {
+    "text": "was",
+    "start": 65.95,
+    "end": 66.16,
+    "id": "w219"
+  },
+  {
+    "text": "never",
+    "start": 66.16,
+    "end": 66.5,
+    "id": "w220"
+  },
+  {
+    "text": "the",
+    "start": 66.5,
+    "end": 66.71,
+    "id": "w221"
+  },
+  {
+    "text": "cure.",
+    "start": 66.71,
+    "end": 67.22,
+    "id": "w222"
+  },
+  {
+    "text": "The",
+    "start": 67.28,
+    "end": 67.35,
+    "id": "w223"
+  },
+  {
+    "text": "music",
+    "start": 67.35,
+    "end": 67.53,
+    "id": "w224"
+  },
+  {
+    "text": "was",
+    "start": 67.63,
+    "end": 67.7,
+    "id": "w225"
+  },
+  {
+    "text": "the",
+    "start": 67.7,
+    "end": 67.83,
+    "id": "w226"
+  },
+  {
+    "text": "kindling.",
+    "start": 67.83,
+    "end": 68.32,
+    "id": "w227"
+  }
+]
