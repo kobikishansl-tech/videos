@@ -133,8 +133,8 @@ RT.sets.field = function (stage) {
       { seed: 5, az: 0.05, el: 0.55, w: 24 }, { seed: 6, az: -1.5, el: 0.35, w: 18 }, { seed: 7, az: 1.6, el: 0.25, w: 18 }, { seed: 8, az: 0.6, el: 0.08, w: 14 }, { seed: 9, az: -0.5, el: 0.06, w: 12 }] });
 
   // ---- light: a low warm afternoon sun from the front left, blue sky light in the shade
-  const hemi = new THREE.HemisphereLight(0x9cc0ff, 0x7a5a3a, 0.62); root.add(hemi);
-  const sun = new THREE.DirectionalLight(0xffdcae, 2.5); sun.position.set(-22, 13, 16); sun.target.position.set(0, 0, -2); root.add(sun); root.add(sun.target);
+  const hemi = new THREE.HemisphereLight(0x9cc0ff, 0x7a5a3a, 0.9); root.add(hemi);
+  const sun = new THREE.DirectionalLight(0xffdcae, 3.5); sun.position.set(-22, 13, 16); sun.target.position.set(0, 0, -2); root.add(sun); root.add(sun.target);
   sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096); { const c = sun.shadow.camera; c.left = -24; c.right = 24; c.top = 24; c.bottom = -24; c.near = 1; c.far = 80; }
   sun.shadow.bias = -0.0005; sun.shadow.normalBias = 0.03; sun.shadow.radius = 3;
 
@@ -161,9 +161,10 @@ RT.sets.field = function (stage) {
 
   return {
     name: "field", group, origin: [OX, 0, 0], spots,
-    mood: { clear: 0x9cc0e8, fog: [0xdde7ee, 140, 270], glow: { haze: 0.0004 },
-      // a sunny day: less saturation and contrast than the candle-lit court's base grade, lighter shadow tint, a soft vignette
-      grade: { sat: 1.22, satRed: 0.8, contrast: 1.06, curve: 0.3, pivot: 0.45, shadowTint: [0.9, 0.94, 1.1], shadowAmt: 0.3, warm: [1.04, 1.0, 0.93], warmAmt: 0.35, lift: [0.02, 0.02, 0.03], vignette: 0.28 } },
+    mood: { clear: 0x9cc0e8, fog: [0xb8d0ec, 140, 270], glow: { haze: 0.0004 },
+      // a sunny day, matched to the road's day grade (the style bible's fitted day look): warmer blacks, more saturation
+      // in the lit mids, mild contrast, and a vignette that darkens the corners toward the reference
+      grade: { sat: 1.35, satRed: 1.0, contrast: 1.02, curve: 0.35, pivot: 0.45, shadowTint: [0.9, 0.94, 1.1], shadowAmt: 0.3, warm: [1.05, 1.0, 0.93], warmAmt: 0.45, lift: [0.035, 0.022, 0.022], vignette: 0.16, vigInner: 0.3, vigOuter: 1.0 } },
     // the vista sees farmland ~180 m away: the camera's far limit must reach it (raised once, never lowered; see the notes)
     onMood(m, st) { const cam = st && st.camera; if (cam && cam.far < FAR) { cam.far = FAR; cam.updateProjectionMatrix(); } },
     sun, hemi, notice, barn, leaves, sky, views, heightAt: (x, z) => height(x - OX, z),

@@ -112,7 +112,7 @@ RT.sets.road = function (stage) {
     moon: { az: -0.04, el: 0.27, size: 4.2 }, clouds: [{ seed: 31, az: 0.25, el: 0.3, w: 18 }, { seed: 32, az: -0.7, el: 0.2, w: 14 }] });
   // the day sky is built the first time a frame asks for the day: a film that never uses it renders exactly as before
   let skyDay = null;
-  const daySky = () => skyDay || (skyDay = O.sky(stage, group, { top: "#3f78cc", mid: "#76a8e2", horizon: "#dde7ee", below: "#b9b0a0",
+  const daySky = () => skyDay || (skyDay = O.sky(stage, group, { top: "#3e7fd2", mid: "#70adf1", horizon: "#b8d0ec", below: "#b9b0a0",
     clouds: [{ seed: 33, az: 0.3, el: 0.3, w: 18 }, { seed: 34, az: -0.6, el: 0.2, w: 15 }, { seed: 35, az: 0.05, el: 0.5, w: 20 }, { seed: 36, az: 1.2, el: 0.25, w: 16 }] }));
 
   // ---- light: moonlight (blue, shadows) from behind the courthouse on the left; dark blue sky light; warm windows
@@ -165,7 +165,7 @@ RT.sets.road = function (stage) {
   // ---- day: what the set's own lights do (moodDay does the rest). Pure in k: the night values come back at k = 0.
   const C = (h) => new THREE.Color(h), lerpC = (a, b, k) => a.clone().lerp(b, k), lerp = (a, b, k) => a + (b - a) * k;
   const NIGHT = { key: C(0xa8bcff), keyI: 2.1, keyP: [-14, 22, -26], hemiS: C(0x5a7ac4), hemiG: C(0x1e1a2c), hemiI: 0.95, fill: C(0x6a80c8), fillI: 0.35 };
-  const DAY = { key: C(0xffe2bc), keyI: 2.9, keyP: [-13, 26, 12], hemiS: C(0x9cc0ff), hemiG: C(0x8a7458), hemiI: 0.8, fill: C(0xfff0dc), fillI: 0.3 };
+  const DAY = { key: C(0xffe2bc), keyI: 4.0, keyP: [-13, 26, 12], hemiS: C(0x9cc0ff), hemiG: C(0x8a7458), hemiI: 1.15, fill: C(0xfff0dc), fillI: 0.3 };
   const lampLights = lamps.map((l) => l.userData.light).filter(Boolean), lampI = lampLights.map((l) => l.intensity), poolI = pools.map((l) => l.intensity);
   const glass = lamps.map((l) => l.userData.glass).filter(Boolean); for (const g of glass) { g.userData.glow0 = g.userData.glow; g.userData.col0 = g.material.color.clone(); }
   function setDay(k, st) {
@@ -184,9 +184,11 @@ RT.sets.road = function (stage) {
     } else if (skyDay) skyDay.rig.visible = false;
   }
   const mood = { day: 0, clear: 0x0b1230, fog: [0x1a2446, 14, 62], grade: { sat: 1.4, warmAmt: 0.3, shadowTint: [0.78, 0.86, 1.25], shadowAmt: 0.6, vignette: 0.55 }, glow: { haze: 0.0025, amount: 1.1 } };
-  const moodDay = { day: 1, clear: 0x9cc0e8, fog: [0xd6e0e8, 30, 120], glow: { haze: 0.0008, amount: 0.8 },
-    // a clear day: the field's day grade (less saturation and contrast than the night's, a light shadow tint, a soft vignette)
-    grade: { sat: 1.22, satRed: 0.8, contrast: 1.06, curve: 0.3, pivot: 0.45, shadowTint: [0.9, 0.94, 1.1], shadowAmt: 0.3, warm: [1.04, 1.0, 0.93], warmAmt: 0.35, lift: [0.02, 0.02, 0.03], vignette: 0.3 } };
+  const moodDay = { day: 1, clear: 0x9cc0e8, fog: [0xb8d0ec, 30, 120], glow: { haze: 0.0008, amount: 0.8 },
+    // a clear day, measured against the style bible's fitted day grade: warm-lifted blacks (35,19,20), heavy saturation
+    // in the lit mids, mild contrast, a blue-violet shadow tint kept subtle, and a stronger vignette (the bible's day
+    // frames are ~14% darker in the corners than the centre, ours were 46% brighter — this pulls the other way)
+    grade: { sat: 1.35, satRed: 1.0, contrast: 1.02, curve: 0.35, pivot: 0.45, shadowTint: [0.9, 0.94, 1.1], shadowAmt: 0.3, warm: [1.05, 1.0, 0.93], warmAmt: 0.45, lift: [0.035, 0.022, 0.022], vignette: 0.16, vigInner: 0.3, vigOuter: 1.0 } };
 
   return {
     name: "road", group, origin: [OX, 0, 0], spots,

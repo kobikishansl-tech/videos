@@ -66,8 +66,8 @@ RT.CAMERAS = {
         b: { pos: ["pews.1", [0.7, 1.35, 1.85]], look: ["pews.1", [0, 1.05, 0]] } },
   27: { a: { pos: ["pews.0", [-0.5, 1.75, 4.8]], look: ["pews.2", [0, 0.95, 0]], fov: 46 },
         b: { pos: ["pews.0", [-0.45, 1.7, 4.4]], look: ["pews.2", [0, 0.95, 0]] } },
-  28: { a: { pos: ["stage", [-0.8, 1.3, 3.5]], look: ["stage", [-0.4, 1.05, -0.5]], fov: 46 },
-        b: { pos: ["stage", [-0.62, 1.25, 2.8]], look: ["stage", [-0.4, 1.05, -0.5]] } },
+  28: { a: { pos: ["stage", [0.1, 1.35, 3.5]], look: ["stage", [-0.11, 2.06, -0.79]], fov: 44 },
+        b: { pos: ["stage", [-0.05, 1.3, 2.9]], look: ["stage", [-0.11, 2.06, -0.79]] } },
 };
 // who the narrator is standing next to in each stretch: their mouths flap with the words (RT.SPOKEN times)
 RT.SPEAKERS = [
