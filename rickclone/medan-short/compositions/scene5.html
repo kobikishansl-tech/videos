@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8" /></head>
+<body>
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #000; overflow: hidden; }
+    #s5-shakewrap { position: absolute; inset: 0; }
+    #s5-kb { position: absolute; inset: 0; will-change: transform; }
+    #s5-kb img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
+    #s5-img-b { opacity: 0; }
+    #s5-dip { position: absolute; inset: 0; background: #000; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="scene5" data-width="1080" data-height="1920">
+    <div id="s5-kb" data-layout-allow-overflow>
+      <img id="s5-img-a" src="assets/shot5_a.jpg" alt="" />
+      <img id="s5-img-b" src="assets/shot5_b.jpg" alt="" />
+    </div>
+    <div id="s5-dip" data-layout-ignore></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#s5-kb", { scale: 1.06 }, { scale: 1.2, z: 0.001, force3D: true, duration: 5.450, ease: "power2.inOut" }, 0);
+
+      for (let i = 1, t = 0.33; t < 5.6; i++, t += 0.33) {
+        tl.set("#s5-img-b", { opacity: i % 2 }, Number(t.toFixed(3)));
+      }
+      tl.fromTo("#s5-dip", { opacity: 0.35 }, { opacity: 0, duration: 0.14, ease: "power2.out" }, 0);
+      tl.to("#s5-dip", { opacity: 0.35, duration: 0.1, ease: "power2.in" }, 5.50);
+
+      window.__timelines["scene5"] = tl;
+    })();
+  </script>
+</template>
+</body>
+</html>

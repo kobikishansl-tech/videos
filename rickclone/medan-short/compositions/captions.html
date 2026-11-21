@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8" /></head>
+<body>
+<template>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <style>
+      #root { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+      .caption-group {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 620px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 76px;
+        line-height: 1.08;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        opacity: 0;
+        visibility: hidden;
+        overflow: visible;
+        max-width: none;
+      }
+      .caption-group.giant { font-size: 168px; bottom: 560px; }
+      .caption-group .w {
+        position: relative;
+        display: inline-block;
+        line-height: 1.08;
+        vertical-align: bottom;
+      }
+      .caption-group .w .stroke {
+        -webkit-text-stroke: 16px #000000;
+        text-stroke: 16px #000000;
+      }
+      .caption-group .w .fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      .caption-group .punch .fill { color: var(--punch, #FFE040); font-size: 1.3em; }
+      .caption-group.giant .punch .fill { font-size: 1em; }
+      .caption-group.giant .punch { color: #FFE040; }
+    </style>
+    <div id="g01" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">IN</span><span class="fill">IN</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">JUNE</span><span class="fill">JUNE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">1947,</span><span class="fill">1947,</span></span>
+    </div>
+    <div id="g02" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">RADIO</span><span class="fill">RADIO</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">OPERATORS</span><span class="fill">OPERATORS</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HEARD</span><span class="fill">HEARD</span></span>
+    </div>
+    <div id="g03" class="caption-group giant has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">A</span><span class="fill">A</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">TERRIFIED</span><span class="fill">TERRIFIED</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">CALL.</span><span class="fill">CALL.</span></span>
+    </div>
+    <div id="g04" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">CALL</span><span class="fill">CALL</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">CAME</span><span class="fill">CAME</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">FROM</span><span class="fill">FROM</span></span>
+    </div>
+    <div id="g05" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">A</span><span class="fill">A</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">DUTCH</span><span class="fill">DUTCH</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">FREIGHTER</span><span class="fill">FREIGHTER</span></span>
+    </div>
+    <div id="g06" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">IN</span><span class="fill">IN</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">MALACCA</span><span class="fill">MALACCA</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">STRAIT.</span><span class="fill">STRAIT.</span></span>
+    </div>
+    <div id="g07" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">OPERATOR</span><span class="fill">OPERATOR</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">CLAWED</span><span class="fill">CLAWED</span></span>
+    </div>
+    <div id="g08" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">AT</span><span class="fill">AT</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HIS</span><span class="fill">HIS</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">MICROPHONE</span><span class="fill">MICROPHONE</span></span>
+    </div>
+    <div id="g09" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">CAPTAIN</span><span class="fill">CAPTAIN</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">COLLAPSED.</span><span class="fill">COLLAPSED.</span></span>
+    </div>
+    <div id="g10" class="caption-group giant has-punch" data-layout-allow-safe-zone>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">DEAD.</span><span class="fill">DEAD.</span></span>
+    </div>
+    <div id="g11" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HIS</span><span class="fill">HIS</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">FINAL</span><span class="fill">FINAL</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">TRANSMISSION:</span><span class="fill">TRANSMISSION:</span></span>
+    </div>
+    <div id="g12" class="caption-group giant has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">I</span><span class="fill">I</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">DIE.</span><span class="fill">DIE.</span></span>
+    </div>
+    <div id="g13" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">RESCUE</span><span class="fill">RESCUE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SHIP</span><span class="fill">SHIP</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SILVER</span><span class="fill">SILVER</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">STAR</span><span class="fill">STAR</span></span>
+    </div>
+    <div id="g14" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">REACHED</span><span class="fill">REACHED</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">DRIFTING</span><span class="fill">DRIFTING</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">VESSEL.</span><span class="fill">VESSEL.</span></span>
+    </div>
+    <div id="g15" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">ENTIRE</span><span class="fill">ENTIRE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">CREW</span><span class="fill">CREW</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">LAY</span><span class="fill">LAY</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">FROZEN</span><span class="fill">FROZEN</span></span>
+    </div>
+    <div id="g16" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">EYES</span><span class="fill">EYES</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">WIDE.</span><span class="fill">WIDE.</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">MOUTHS</span><span class="fill">MOUTHS</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">OPEN.</span><span class="fill">OPEN.</span></span>
+    </div>
+    <div id="g17" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">FACES</span><span class="fill">FACES</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">LOCKED</span><span class="fill">LOCKED</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">IN</span><span class="fill">IN</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">TERROR.</span><span class="fill">TERROR.</span></span>
+    </div>
+    <div id="g18" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">NOT</span><span class="fill">NOT</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">A</span><span class="fill">A</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SINGLE</span><span class="fill">SINGLE</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">WOUND.</span><span class="fill">WOUND.</span></span>
+    </div>
+    <div id="g19" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SOMETHING</span><span class="fill">SOMETHING</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">STOPPED</span><span class="fill">STOPPED</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THEIR</span><span class="fill">THEIR</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HEARTS.</span><span class="fill">HEARTS.</span></span>
+    </div>
+    <div id="g20" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">BEFORE</span><span class="fill">BEFORE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THEY</span><span class="fill">THEY</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">COULD</span><span class="fill">COULD</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">TOW</span><span class="fill">TOW</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HER</span><span class="fill">HER</span></span>
+    </div>
+    <div id="g21" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SMOKE</span><span class="fill">SMOKE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">POURED</span><span class="fill">POURED</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">FROM</span><span class="fill">FROM</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HER</span><span class="fill">HER</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">HOLD.</span><span class="fill">HOLD.</span></span>
+    </div>
+    <div id="g22" class="caption-group has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">GHOST</span><span class="fill">GHOST</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SHIP</span><span class="fill">SHIP</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">EXPLODED.</span><span class="fill">EXPLODED.</span></span>
+    </div>
+    <div id="g23" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">NO</span><span class="fill">NO</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">REGISTRY.</span><span class="fill">REGISTRY.</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">NO</span><span class="fill">NO</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">PORT.</span><span class="fill">PORT.</span></span>
+    </div>
+    <div id="g24" class="caption-group giant has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">NO</span><span class="fill">NO</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">RECORD.</span><span class="fill">RECORD.</span></span>
+    </div>
+    <div id="g25" class="caption-group" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">SHIP</span><span class="fill">SHIP</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THAT</span><span class="fill">THAT</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">TERRIFIED</span><span class="fill">TERRIFIED</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">THE</span><span class="fill">THE</span></span>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">OCEAN</span><span class="fill">OCEAN</span></span>
+    </div>
+    <div id="g26" class="caption-group giant has-punch" data-layout-allow-safe-zone>
+      <span class="w" data-layout-allow-overlap><span class="stroke" aria-hidden="true">NEVER</span><span class="fill">NEVER</span></span>
+      <span class="w punch" data-layout-allow-overlap><span class="stroke" aria-hidden="true">EXISTED.</span><span class="fill">EXISTED.</span></span>
+    </div>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        const groups = [
+          { id: "#g01", start: 0.4, end: 2.6 },
+          { id: "#g02", start: 2.6, end: 4.7 },
+          { id: "#g03", start: 4.7, end: 6.4, punch: "#g03 .punch" },
+          { id: "#g04", start: 6.7, end: 8.4 },
+          { id: "#g05", start: 8.4, end: 9.6 },
+          { id: "#g06", start: 9.6, end: 11.5, punch: "#g06 .punch" },
+          { id: "#g07", start: 11.9, end: 13.4 },
+          { id: "#g08", start: 13.4, end: 14.8 },
+          { id: "#g09", start: 14.8, end: 16.3 },
+          { id: "#g10", start: 16.3, end: 17.4, punch: "#g10 .punch" },
+          { id: "#g11", start: 17.8, end: 19.6 },
+          { id: "#g12", start: 19.6, end: 22.2, punch: "#g12 .punch" },
+          { id: "#g13", start: 22.8, end: 25.2 },
+          { id: "#g14", start: 25.2, end: 27.6 },
+          { id: "#g15", start: 28.3, end: 30.4, punch: "#g15 .punch" },
+          { id: "#g16", start: 30.4, end: 32.6, punch: "#g16 .punch" },
+          { id: "#g17", start: 32.6, end: 34.4 },
+          { id: "#g18", start: 34.9, end: 37.2, punch: "#g18 .punch" },
+          { id: "#g19", start: 37.2, end: 39.8, punch: "#g19 .punch" },
+          { id: "#g20", start: 40.6, end: 42.8 },
+          { id: "#g21", start: 42.8, end: 44.8, punch: "#g21 .punch" },
+          { id: "#g22", start: 44.8, end: 47.6, punch: "#g22 .punch" },
+          { id: "#g23", start: 48.6, end: 50.4 },
+          { id: "#g24", start: 50.4, end: 51.8, punch: "#g24 .punch" },
+          { id: "#g25", start: 52.2, end: 54.6 },
+          { id: "#g26", start: 54.6, end: 56.8, punch: "#g26 .punch" }
+        ];
+        groups.forEach((g) => {
+          tl.fromTo(g.id,
+            { opacity: 0, scale: 0.85 },
+            { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(1.7)" },
+            g.start
+          );
+          if (g.punch) {
+            tl.fromTo(g.id + " .punch",
+              { scale: 1.45 },
+              { scale: 1, duration: 0.3, ease: "expo.out", immediateRender: false },
+              g.start
+            );
+          }
+          tl.set(g.id, { visibility: "visible" }, g.start);
+          tl.to(g.id, { opacity: 0, duration: 0.12, ease: "power2.in" }, g.end - 0.12);
+          tl.set(g.id, { opacity: 0, visibility: "hidden" }, g.end);
+        });
+        window.__timelines["captions"] = tl;
+      })();
+    </script>
+  </div>
+</template>
+</body>
+</html>

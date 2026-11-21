@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8" /></head>
+<body>
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #000; overflow: hidden; }
+    #s7-shakewrap { position: absolute; inset: 0; }
+    #s7-kb { position: absolute; inset: 0; will-change: transform; }
+    #s7-kb img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
+    #s7-img-b { opacity: 0; }
+    #s7-dip { position: absolute; inset: 0; background: #000; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="scene7" data-width="1080" data-height="1920">
+    <div id="s7-kb" data-layout-allow-overflow>
+      <img id="s7-img-a" src="assets/shot7.jpg" alt="" />
+      <img id="s7-img-b" src="assets/shot7_b.jpg" alt="" />
+    </div>
+    <div id="s7-dip" data-layout-ignore></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#s7-kb", { scale: 1.2, x: 30, y: 20 }, { scale: 1.08, x: -30, y: -10, z: 0.001, force3D: true, duration: 4.350, ease: "power2.inOut" }, 0);
+
+      for (let i = 1, t = 0.33; t < 4.5; i++, t += 0.33) {
+        tl.set("#s7-img-b", { opacity: i % 2 }, Number(t.toFixed(3)));
+      }
+      tl.fromTo("#s7-dip", { opacity: 0.35 }, { opacity: 0, duration: 0.14, ease: "power2.out" }, 0);
+      tl.to("#s7-dip", { opacity: 0.35, duration: 0.1, ease: "power2.in" }, 4.40);
+
+      window.__timelines["scene7"] = tl;
+    })();
+  </script>
+</template>
+</body>
+</html>
