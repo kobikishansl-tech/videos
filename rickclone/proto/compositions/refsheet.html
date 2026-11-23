@@ -1,0 +1,63 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #f2e8d5; font-family: sans-serif; }
+    #page { position: absolute; inset: 0; }
+    .ttl { position: absolute; font-weight: 900; color: #2b2027; }
+    .lbl { position: absolute; font-size: 15px; font-weight: 700; color: #4a3b42; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="refsheet" data-width="1080" data-height="1920">
+    <div id="page" class="clip" data-start="0" data-duration="0.5" data-track-index="1" data-layout-ignore></div>
+  </div>
+  <script>
+    (() => {
+      const $ = (s) => document.querySelector(s);
+      const page = $("#page");
+      const ttl = document.createElement("div"); ttl.className = "ttl";
+      ttl.textContent = "MILA - WorldFrame character sheet v1"; ttl.style.cssText += "; left: 60px; top: 44px; font-size: 44px;";
+      const sub = document.createElement("div"); sub.className = "lbl";
+      sub.textContent = "original design - teal ponytail / mustard jacket / plum top / teal boots";
+      sub.style.cssText += "; left: 60px; top: 104px; text-align: left;";
+      page.appendChild(ttl); page.appendChild(sub);
+
+      function makeCanvas(x, y, w, h, pose, label) {
+        const c = document.createElement("canvas");
+        c.width = 300; c.height = 460; c.style.cssText = `position:absolute; left:${x}px; top:${y}px; width:${w}px; height:${h}px;`;
+        c.style.background = "#faf3e4"; c.style.border = "2px solid #c9b896"; c.style.borderRadius = "10px";
+        page.appendChild(c);
+        const g = c.getContext("2d");
+        g.fillStyle = "#f6efe0"; g.fillRect(0, 0, 260, 24); g.fillRect(0, 300, 260, 24);
+        const px = 118;                                     // metres -> px (panel is a mini card)
+        g.setTransform(px, 0, 0, -px, 150, 432);            // origin bottom-centre, y up
+        RT.MILA.def.draw(g, Object.assign({}, pose, { face: pose.face == null ? null : pose.face }), SF.draw);
+        if (label) { const l = document.createElement("div"); l.className = "lbl"; l.textContent = label;
+          l.style.cssText += `; left: ${x}px; top: ${y + h - 26}px; width: ${w}px;`; page.appendChild(l); }
+        return c;
+      }
+
+      // --- row 1: views ---
+      makeCanvas(60, 160, 220, 330, { profile: 0, faceDir: 1 }, "front");
+      makeCanvas(310, 160, 220, 330, { profile: 0.3, faceDir: 1 }, "three-quarter");
+      makeCanvas(560, 160, 220, 330, { profile: 1, faceDir: 1 }, "profile (right)");
+      makeCanvas(810, 160, 220, 330, { profile: 1, faceDir: -1 }, "profile (left)");
+      // --- row 2: actions ---
+      makeCanvas(60, 560, 220, 330, { profile: 0, kick: 0, step: 0 }, "stand");
+      makeCanvas(310, 560, 220, 330, RT.MILA.walk(0.72, { bps: 2.1 }), "walk");
+      makeCanvas(560, 560, 220, 330, RT.MILA.run(0.31, { bps: 3.4 }), "run");
+      makeCanvas(810, 560, 220, 330, Object.assign(RT.MILA.talk(0.37, {}), { profile: 0 }), "talk");
+      // --- row 3+4: expressions ---
+      const E = RT.MILA.EXPR;
+      makeCanvas(60, 980, 220, 300, { face: E.joy }, "joy");
+      makeCanvas(310, 980, 220, 300, { face: E.laugh }, "laugh");
+      makeCanvas(560, 980, 220, 300, { face: E.gasp }, "gasp");
+      makeCanvas(810, 980, 220, 300, { face: E.worried }, "worried");
+      makeCanvas(60, 1330, 220, 300, { face: E.sly }, "sly");
+      makeCanvas(310, 1330, 220, 300, { face: E.focused }, "focused");
+      makeCanvas(560, 1330, 220, 300, { face: E.blink }, "blink");
+      makeCanvas(810, 1330, 220, 300, { profile: 0.5, armN: [-1.05, 2.0], armF: "hips", face: E.joy }, "gesture + 3/4");
+
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 0.5 }, 0);
+      window.__timelines["refsheet"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,11 @@
+/* words.css: heavy rounded white words, black outline, a hard dark shadow down and right (see words.js).
+ * Matched to the reference with the same pixel probes: x-height 39-40 px, outline about 7 px,
+ * the dark edge reaching about 4 px further down and right. Nunito 900 is bundled with HyperFrames. */
+.sf-words { position: absolute; inset: 0; pointer-events: none; }
+.sf-word {
+  position: absolute; left: 50%; white-space: nowrap; transform: translate(-50%, -50%);
+  font-family: Nunito, sans-serif; font-weight: 900; font-size: 82px; line-height: 1; letter-spacing: -0.02em;
+  color: #ffffff;
+  -webkit-text-stroke: 13px #0e0a0d; paint-order: stroke fill;
+  text-shadow: 2px 2px 0 #0e0a0d, 3.5px 4.5px 0 rgba(14, 10, 13, 0.92), 5px 8px 9px rgba(0, 0, 0, 0.55);
+}
