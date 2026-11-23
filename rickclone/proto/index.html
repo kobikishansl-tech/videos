@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>WorldFrame prototype</title>
+  <style> html, body { margin: 0; background: #1c1426; } </style>
+  <script src="assets/vendor/gsap/gsap.min.js"></script>
+  <script src="assets/vendor/three/three.min.js"></script>
+  <script src="engine/ink.js"></script>
+  <script src="engine/lens.js"></script>
+  <script src="engine/grade.js"></script>
+  <script src="engine/glow.js"></script>
+  <script src="engine/stage.js"></script>
+  <script src="engine/paint.js"></script>
+  <script src="engine/props.js"></script>
+  <script src="engine/outdoor.js"></script>
+  <script src="engine/cards.js"></script>
+  <script src="engine/cam.js"></script>
+  <script src="engine/camera_lib.js"></script>
+  <script src="cast/mila.js"></script>
+  <script src="sets/market.js"></script>
+  <script>
+    window.RT = window.RT || {}; window.__timelines = window.__timelines || {}; RT.SETS = ["market"]; RT.DURATION = 15;
+  </script>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="short" data-composition-id="short" data-composition-src="compositions/short.html" data-start="0"
+           data-duration="15" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 1"></div>
+    </div>
+    <audio id="music" data-start="0" data-duration="15" data-track-index="2" data-volume="1" src="music/soundtrack.wav"></audio>
+    <script> window.__timelines["main"] = gsap.timeline({ paused: true }); </script>
+    
+  </body>
+</html>

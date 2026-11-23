@@ -1,0 +1,60 @@
+video,shot_n,t_start,t_end,n_cells,repr_frame,luma_mean,sat_mean,ink_frac,subj_x,top_luma,bot_luma,trans_diff,trans_kind,inshot_moving_frac,translation_frac,shift_px_per_pair,inshot_change_mean
+VS1Z_Q-Klt8,0,0.0,1.98,2,frames/VS1Z_Q-Klt8/t000001.jpg,0.474,0.284,0.003,0.481,0.41,0.392,,?,1.0,0.0,0,0.2261
+VS1Z_Q-Klt8,1,0.98,15.77,15,frames/VS1Z_Q-Klt8/t000008.jpg,0.407,0.303,0.02,0.489,0.38,0.303,55.8,hard/whip (large),1.0,0.0,0,0.1722
+VS1Z_Q-Klt8,2,14.77,19.71,5,frames/VS1Z_Q-Klt8/t000017.jpg,0.536,0.209,0.005,0.421,0.617,0.412,48.3,hard/whip (large),1.0,0.0,0,0.1642
+VS1Z_Q-Klt8,3,18.71,27.59,9,frames/VS1Z_Q-Klt8/t000023.jpg,0.373,0.4,0.019,0.506,0.335,0.245,22.9,hard/whip,1.0,0.0,0,0.1668
+VS1Z_Q-Klt8,4,26.59,31.53,5,frames/VS1Z_Q-Klt8/t000029.jpg,0.562,0.367,0.054,0.506,0.587,0.371,78.5,hard/whip (large),1.0,0.0,0,0.1607
+VS1Z_Q-Klt8,5,30.53,33.5,3,frames/VS1Z_Q-Klt8/t000032.jpg,0.494,0.448,0.067,0.551,0.602,0.256,21.1,hard/whip,1.0,0.0,0,0.1611
+VS1Z_Q-Klt8,6,32.5,50.24,18,frames/VS1Z_Q-Klt8/t000042.jpg,0.41,0.452,0.005,0.517,0.393,0.339,15.5,hard/whip,1.0,0.0,0,0.118
+VS1Z_Q-Klt8,7,49.24,56.15,7,frames/VS1Z_Q-Klt8/t000053.jpg,0.428,0.315,0.003,0.633,0.416,0.425,32.2,hard/whip (large),1.0,0.0,0,0.1666
+VS1Z_Q-Klt8,8,55.15,60.09,5,frames/VS1Z_Q-Klt8/t000058.jpg,0.519,0.392,0.004,0.683,0.389,0.621,51.8,hard/whip (large),1.0,0.0,0,0.1558
+VS1Z_Q-Klt8,9,59.09,62.06,3,frames/VS1Z_Q-Klt8/t000061.jpg,0.524,0.343,0.002,0.53,0.433,0.692,60.6,hard/whip (large),1.0,0.0,0,0.1634
+VS1Z_Q-Klt8,10,61.06,66.0,5,frames/VS1Z_Q-Klt8/t000064.jpg,0.522,0.364,0.05,0.544,0.517,0.556,29.3,hard/whip (large),1.0,0.0,0,0.1846
+QlDPMzGmYac,0,0.0,7.79,8,frames/QlDPMzGmYac/t000004.jpg,0.486,0.489,0.004,0.435,0.38,0.458,,?,1.0,0.0,0,0.1223
+QlDPMzGmYac,1,6.79,15.54,9,frames/QlDPMzGmYac/t000011.jpg,0.376,0.393,0.064,0.469,0.338,0.343,35.7,hard/whip (large),1.0,0.0,0,0.1601
+QlDPMzGmYac,2,14.54,16.51,2,frames/QlDPMzGmYac/t000016.jpg,0.325,0.285,0.001,0.464,0.375,0.25,50.2,hard/whip (large),1.0,0.0,0,0.0656
+QlDPMzGmYac,3,15.51,30.08,15,frames/QlDPMzGmYac/t000023.jpg,0.297,0.505,0.024,0.495,0.246,0.285,13.3,hard/whip,1.0,0.0,0,0.1347
+QlDPMzGmYac,4,29.08,34.92,6,frames/QlDPMzGmYac/t000033.jpg,0.458,0.434,0.007,0.53,0.324,0.398,28.9,hard/whip (large),1.0,0.0,0,0.155
+QlDPMzGmYac,5,33.92,36.86,3,frames/QlDPMzGmYac/t000036.jpg,0.447,0.404,0.043,0.514,0.487,0.233,45.5,hard/whip (large),1.0,0.0,0,0.2052
+QlDPMzGmYac,6,35.86,45.59,10,frames/QlDPMzGmYac/t000042.jpg,0.493,0.323,0.016,0.449,0.561,0.353,56.8,hard/whip (large),0.89,0.0,0,0.1345
+QlDPMzGmYac,7,44.59,46.55,2,frames/QlDPMzGmYac/t000047.jpg,0.533,0.399,0.003,0.521,0.517,0.471,44.4,hard/whip (large),1.0,0.0,0,0.1791
+QlDPMzGmYac,8,45.55,55.28,10,frames/QlDPMzGmYac/t000052.jpg,0.55,0.494,0.0,0.442,0.479,0.543,43.5,hard/whip (large),0.88,0.0,0,0.1061
+QlDPMzGmYac,9,54.28,59.15,5,frames/QlDPMzGmYac/t000058.jpg,0.497,0.468,0.003,0.327,0.503,0.534,15.4,hard/whip,1.0,0.0,0,0.1301
+QlDPMzGmYac,10,58.15,61.09,3,frames/QlDPMzGmYac/t000061.jpg,0.494,0.422,0.012,0.489,0.46,0.454,50.2,hard/whip (large),1.0,0.0,0,0.1506
+QlDPMzGmYac,11,60.09,63.03,3,frames/QlDPMzGmYac/t000063.jpg,0.451,0.299,0.034,0.38,0.499,0.451,49.8,hard/whip (large),1.0,0.0,0,0.21
+QlDPMzGmYac,12,62.03,64.0,2,frames/QlDPMzGmYac/t000065.jpg,0.574,0.27,0.018,0.504,0.523,0.569,57.0,hard/whip (large),1.0,0.0,0,0.2767
+TRUkQ1wbV2E,0,0.0,3.9,4,frames/TRUkQ1wbV2E/t000002.jpg,0.302,0.507,0.16,0.536,0.281,0.268,,?,1.0,0.0,0,0.1812
+TRUkQ1wbV2E,1,2.9,11.65,9,frames/TRUkQ1wbV2E/t000007.jpg,0.388,0.548,0.03,0.541,0.362,0.251,50.4,hard/whip (large),1.0,0.0,0,0.1276
+TRUkQ1wbV2E,2,10.65,17.46,7,frames/TRUkQ1wbV2E/t000014.jpg,0.516,0.431,0.016,0.562,0.547,0.378,57.3,hard/whip (large),1.0,0.0,0,0.1786
+TRUkQ1wbV2E,3,16.46,22.3,6,frames/TRUkQ1wbV2E/t000020.jpg,0.462,0.383,0.015,0.543,0.487,0.336,67.1,hard/whip (large),1.0,0.0,0,0.1756
+TRUkQ1wbV2E,4,21.3,31.98,11,frames/TRUkQ1wbV2E/t000027.jpg,0.395,0.42,0.052,0.529,0.36,0.397,60.9,hard/whip (large),1.0,0.0,0,0.1756
+TRUkQ1wbV2E,5,30.98,33.92,3,frames/TRUkQ1wbV2E/t000033.jpg,0.219,0.676,0.32,0.505,0.183,0.251,52.1,hard/whip (large),1.0,0.0,0,0.1777
+TRUkQ1wbV2E,6,32.92,41.67,9,frames/TRUkQ1wbV2E/t000038.jpg,0.4,0.533,0.025,0.619,0.361,0.36,67.6,hard/whip (large),1.0,0.0,0,0.1336
+TRUkQ1wbV2E,7,40.67,45.54,5,frames/TRUkQ1wbV2E/t000044.jpg,0.35,0.535,0.03,0.554,0.302,0.338,21.7,hard/whip,1.0,0.0,0,0.1495
+TRUkQ1wbV2E,8,44.54,47.48,3,frames/TRUkQ1wbV2E/t000047.jpg,0.405,0.473,0.031,0.586,0.375,0.41,56.1,hard/whip (large),1.0,0.0,0,0.2072
+TRUkQ1wbV2E,9,46.48,52.32,6,frames/TRUkQ1wbV2E/t000051.jpg,0.323,0.542,0.103,0.525,0.238,0.286,39.0,hard/whip (large),1.0,0.0,0,0.1789
+TRUkQ1wbV2E,10,51.32,54.25,3,frames/TRUkQ1wbV2E/t000054.jpg,0.342,0.482,0.148,0.525,0.26,0.327,47.0,hard/whip (large),1.0,0.0,0,0.3085
+TRUkQ1wbV2E,11,53.25,56.19,3,frames/TRUkQ1wbV2E/t000056.jpg,0.488,0.526,0.018,0.45,0.408,0.412,101.3,hard/whip (large),1.0,0.0,0,0.2
+TRUkQ1wbV2E,12,55.19,61.03,6,frames/TRUkQ1wbV2E/t000060.jpg,0.356,0.682,0.031,0.451,0.235,0.276,48.9,hard/whip (large),0.8,0.0,0,0.1251
+Mz72MuPgnGY,0,0.0,1.98,2,frames/Mz72MuPgnGY/t000001.jpg,0.468,0.581,0.058,0.492,0.401,0.357,,?,1.0,0.0,0,0.2847
+Mz72MuPgnGY,1,0.98,2.97,2,frames/Mz72MuPgnGY/t000002.jpg,0.464,0.614,0.078,0.501,0.429,0.489,66.6,hard/whip (large),1.0,0.0,0,0.3581
+Mz72MuPgnGY,2,1.97,5.92,4,frames/Mz72MuPgnGY/t000004.jpg,0.454,0.549,0.155,0.514,0.408,0.469,86.1,hard/whip (large),1.0,0.0,0,0.263
+Mz72MuPgnGY,3,4.92,11.83,7,frames/Mz72MuPgnGY/t000008.jpg,0.47,0.505,0.118,0.482,0.604,0.261,34.5,hard/whip (large),1.0,0.0,0,0.1819
+Mz72MuPgnGY,4,10.83,13.8,3,frames/Mz72MuPgnGY/t000012.jpg,0.458,0.496,0.042,0.54,0.377,0.347,59.7,hard/whip (large),1.0,0.0,0,0.2684
+Mz72MuPgnGY,5,12.8,17.74,5,frames/Mz72MuPgnGY/t000015.jpg,0.462,0.508,0.031,0.517,0.354,0.36,56.5,hard/whip (large),1.0,0.0,0,0.1679
+Mz72MuPgnGY,6,16.74,19.71,3,frames/Mz72MuPgnGY/t000018.jpg,0.456,0.543,0.063,0.558,0.449,0.399,68.2,hard/whip (large),1.0,0.0,0,0.246
+Mz72MuPgnGY,7,18.71,21.68,3,frames/Mz72MuPgnGY/t000020.jpg,0.442,0.5,0.091,0.518,0.417,0.397,73.0,hard/whip (large),1.0,0.0,0,0.3549
+Mz72MuPgnGY,8,20.68,44.33,24,frames/Mz72MuPgnGY/t000033.jpg,0.331,0.63,0.118,0.491,0.213,0.322,80.4,hard/whip (large),1.0,0.0,0,0.1631
+Mz72MuPgnGY,9,43.33,50.24,7,frames/Mz72MuPgnGY/t000047.jpg,0.478,0.584,0.074,0.457,0.517,0.25,48.3,hard/whip (large),1.0,0.0,0,0.1699
+Mz72MuPgnGY,10,49.24,54.18,5,frames/Mz72MuPgnGY/t000052.jpg,0.585,0.664,0.011,0.564,0.518,0.571,71.8,hard/whip (large),1.0,0.0,0,0.2269
+Mz72MuPgnGY,11,53.18,66.0,13,frames/Mz72MuPgnGY/t000060.jpg,0.276,0.756,0.081,0.504,0.191,0.303,21.2,hard/whip,1.0,0.0,0,0.1225
+RVnC1DSfK30,0,0.0,1.88,9,frames/RVnC1DSfK30/t000004.jpg,0.223,0.557,0.578,0.486,0.316,0.214,,?,0.12,0.0,0,0.0204
+RVnC1DSfK30,1,0.88,1.99,2,frames/RVnC1DSfK30/t000009.jpg,0.203,0.596,0.579,0.483,0.243,0.201,9.8,soft (dissolve/evolution),1.0,0.0,0,0.0545
+RVnC1DSfK30,2,0.99,2.1,2,frames/RVnC1DSfK30/t000010.jpg,0.204,0.57,0.579,0.485,0.306,0.161,13.2,hard/whip,1.0,0.0,0,0.042
+RVnC1DSfK30,3,1.1,3.2,11,frames/RVnC1DSfK30/t000015.jpg,0.171,0.612,0.584,0.485,0.181,0.144,9.3,soft (dissolve/evolution),0.2,0.0,0,0.0342
+RVnC1DSfK30,4,2.2,4.52,13,frames/RVnC1DSfK30/t000026.jpg,0.22,0.606,0.584,0.492,0.129,0.184,21.2,hard/whip,0.08,0.0,0,0.0243
+RVnC1DSfK30,5,3.52,4.74,3,frames/RVnC1DSfK30/t000033.jpg,0.254,0.572,0.584,0.501,0.261,0.212,15.3,hard/whip,0.5,0.0,0,0.0308
+RVnC1DSfK30,6,3.74,5.29,6,frames/RVnC1DSfK30/t000037.jpg,0.247,0.541,0.583,0.491,0.283,0.177,9.8,soft (dissolve/evolution),0.2,0.0,0,0.0351
+RVnC1DSfK30,7,4.29,6.61,13,frames/RVnC1DSfK30/t000045.jpg,0.188,0.605,0.581,0.49,0.204,0.153,22.0,hard/whip,0.25,0.0,0,0.0336
+RVnC1DSfK30,8,5.61,9.69,29,frames/RVnC1DSfK30/t000065.jpg,0.165,0.624,0.628,0.499,0.087,0.176,18.0,hard/whip,0.07,0.0,0,0.0207
+RVnC1DSfK30,9,8.69,11.89,21,frames/RVnC1DSfK30/t000089.jpg,0.134,0.704,0.632,0.501,0.075,0.162,21.5,hard/whip,0.0,0.0,0,0.0213

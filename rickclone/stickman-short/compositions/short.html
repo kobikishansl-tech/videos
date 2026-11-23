@@ -1,0 +1,29 @@
+<template>
+  <style>
+    /* the font family is named here on purpose: the renderer only loads a font it finds named in the scene's own style */
+    #root { position: absolute; inset: 0; font-family: Nunito, sans-serif; background: #1c1426; }
+    #short-stage, #short-words { position: absolute; inset: 0; }
+    #short-words .sf-word { font-family: Nunito, sans-serif; font-weight: 900; }
+  </style>
+  <div id="root" data-composition-id="short" data-width="1080" data-height="1920">
+    <div id="short-stage" class="clip" data-start="0" data-duration="62.87" data-track-index="1" data-layout-ignore></div>
+    <div id="short-words" data-layout-ignore></div>
+  </div>
+  <script>
+    (() => {
+      const D = RT.DURATION, $ = (s) => document.querySelector(s);
+      // far 200 m: enough for a landscape seen from high up (ink and depth blur work in real distances)
+      const stage = SF.stage($("#short-stage"), { width: 1080, height: 1920, scale: 1, fov: 44, near: 0.1, far: 200 });
+      // RT.SETS (index.html) names the sets this short uses; each one is built once and added to the stage
+      const sets = {};
+      for (const name of RT.SETS) { sets[name] = RT.sets[name](stage); stage.addSet(sets[name]); }
+      const story = RT.story(stage, sets, $("#short-words"));
+      stage.clock = { t: 0 };
+      stage.renderAt(0);
+      window.__short = { stage, sets, story };     // for stills and debugging only
+      const tl = gsap.timeline({ paused: true });
+      tl.to(stage.clock, { t: D, duration: D, ease: "none", onUpdate: () => { stage.renderAt(stage.clock.t); } }, 0);
+      window.__timelines["short"] = tl;
+    })();
+  </script>
+</template>
