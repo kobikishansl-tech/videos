@@ -1,0 +1,65 @@
+{
+  "comment": "Petrichor Engine R1 demo: 4 scene records (urban + domestic), our own original micro-narrative. Times are exact reference times for this demo; a real production copies them from voice/words.json",
+  "film": {
+    "title": "The Kettle That Told Leave",
+    "duration": 14.0,
+    "grade": { "film_preset": "warm-autumn" }
+  },
+  "scenes": [
+    {
+      "id": "k1", "idx": 0,
+      "t_start": 0.0, "t_end": 5.0,
+      "narration": "The kettle whistled over the stove as the street outside went dark with rain.",
+      "word_times": [["The", 0.0, 0.12], ["kettle", 0.14, 0.2], ["whistled", 0.4, 0.3], ["over", 0.8, 0.12], ["the", 1.0, 0.08], ["stove", 1.15, 0.25], ["as", 1.6, 0.1], ["the", 1.8, 0.08], ["street", 1.95, 0.2], ["outside", 2.25, 0.3], ["went", 2.7, 0.15], ["dark", 2.95, 0.2], ["with", 3.3, 0.15], ["rain.", 3.55, 0.4]],
+      "set": { "family": "domestic", "params": { "width": 6, "depth": 5 }, "seed": 11, "preset": "warm" },
+      "cast": [
+        { "char": "leana", "variant": "b", "anchor": [0.4, 0.0, -2.5], "parentSet": "domestic", "facing": 0.6,
+          "actions": [ { "verb": "idle", "t0": 0.0, "t1": 2.0 }, { "verb": "gesture", "t0": 2.0, "t1": 3.4 }, { "verb": "look", "t0": 3.4, "t1": 4.9 } ] }
+      ],
+      "camera": { "move": "ESTAB", "params": { "pos": [0.6, 1.45, 1.8], "look": [0.1, 1.1, -2.5], "fov": 44, "drift": 0.1 }, "t0": 0.0, "t1": 5.0 },
+      "lighting": { "rig": "warm", "key_int": 0.8, "mood_dip": false },
+      "props": [ { "piece": "kettle", "anchor": [0.1, 0.8, -2.2], "action": "whistle" } ],
+      "sfx": [ { "name": "kettle_whistle", "t": 0.2, "gain": 0.6 } ]
+    },
+    {
+      "id": "k2", "idx": 1,
+      "t_start": 5.0, "t_end": 8.0,
+      "narration": "She ran the stairs down two at a time, coat half-buttoned.",
+      "word_times": [["She", 5.0, 0.1], ["ran", 5.2, 0.15], ["the", 5.45, 0.08], ["stairs", 5.6, 0.2], ["down", 5.9, 0.15], ["two", 6.15, 0.12], ["at", 6.3, 0.08], ["a", 6.4, 0.08], ["time,", 6.55, 0.2], ["coat", 7.0, 0.15], ["half-buttoned.", 7.3, 0.6]],
+      "set": { "family": "domestic", "params": { "width": 6, "depth": 5 }, "seed": 11, "preset": "warm" },
+      "cast": [
+        { "char": "leana", "variant": "b", "anchor": [0.4, 0.0, -3.4], "parentSet": "domestic", "facing": 3.1,
+          "actions": [ { "verb": "run", "t0": 5.0, "t1": 6.9 }, { "verb": "turn", "t0": 6.9, "t1": 7.9 } ] }
+      ],
+      "camera": { "move": "TRACK", "params": { "dist": 2.8, "height": 1.4, "fov": 42, "back": 2.4 }, "t0": 5.0, "t1": 8.0 },
+      "lighting": { "rig": "warm", "key_int": 0.75, "mood_dip": false },
+      "cast_note": "",
+      "sfx": [ { "name": "stairs_steps", "t": 5.1, "gain": 0.5 } ]
+    },
+    {
+      "id": "k3", "idx": 2,
+      "t_start": 8.0, "t_end": 11.5,
+      "narration": "The lamps of Ford Street came on one by one, and nobody was out.",
+      "word_times": [["The", 8.0, 0.1], ["lamps", 8.2, 0.15], ["of", 8.5, 0.08], ["Ford", 8.65, 0.15], ["Street", 8.9, 0.2], ["came", 9.3, 0.15], ["on", 9.55, 0.1], ["one", 9.8, 0.15], ["by", 10.0, 0.08], ["one,", 10.15, 0.15], ["and", 10.5, 0.1], ["nobody", 10.7, 0.2], ["was", 10.95, 0.15], ["out.", 11.1, 0.4]],
+      "set": { "family": "urban", "params": { "lanes": 4, "lamps": 2 }, "seed": 23, "preset": "night" },
+      "cast": [
+        { "char": "leana", "variant": "b", "anchor": [-1.2, 0.0, -3.0], "parentSet": "urban", "facing": 2.4,
+          "actions": [ { "verb": "walk", "t0": 8.0, "t1": 10.5 }, { "verb": "idle", "t0": 10.5, "t1": 11.4 } ] }
+      ],
+      "camera": { "move": "ORBIT", "params": { "target": [-1.2, 1.1, -3.0], "radius": 2.8, "a0": -0.8, "a1": 0.7, "height": 1.45, "fov": 42 }, "t0": 8.0, "t1": 11.5 },
+      "lighting": { "rig": "moody", "key_int": 0.35, "mood_dip": true },
+      "sfx": [ { "name": "rain_bed", "t": 8.0, "gain": 0.35 } ]
+    },
+    {
+      "id": "k4", "idx": 3,
+      "t_start": 11.5, "t_end": 14.0,
+      "narration": "Only her window, warm against the whole grey evening.",
+      "word_times": [["Only", 11.5, 0.12], ["her", 11.7, 0.1], ["window,", 11.9, 0.2], ["warm", 12.2, 0.15], ["against", 12.45, 0.2], ["the", 12.7, 0.08], ["whole", 12.85, 0.12], ["grey", 13.0, 0.15], ["evening.", 13.25, 0.6]],
+      "set": { "family": "urban", "params": { "lanes": 4, "lamps": 2 }, "seed": 23, "preset": "night" },
+      "cast": [],
+      "camera": { "move": "POSTCARD", "params": { "target": [0.4, 1.6, -8.0], "look": [0.4, 1.7, -10.0], "dist0": 6.0, "dist": 5.2, "height": 3.4, "fov0": 46, "fov": 44 }, "t0": 11.5, "t1": 14.0 },
+      "lighting": { "rig": "moody", "key_int": 0.3, "mood_dip": false },
+      "sfx": [ { "name": "rain_soft", "t": 11.6, "gain": 0.25 } ]
+    }
+  ]
+}
